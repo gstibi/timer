@@ -1,0 +1,21 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "Timer for presentations.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timer",
+    "presentation"
+  ],
+  "author": "gstibi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "opn": "^6.0.0",
+    "pug": "^3.0.0"
+  },
+  "bin": "app.js"
+}
