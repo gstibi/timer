@@ -1,0 +1,9 @@
+li .row .col, li .row{
+  padding: 0;
+  margin: 0;
+}
+
+ul.collection.events-list{
+  max-height: 60vh;
+  overflow-y: scroll;
+}
