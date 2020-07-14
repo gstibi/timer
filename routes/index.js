@@ -5,8 +5,13 @@ router.get('/', function(req, res, next){
     res.render('index.pug')
 })
 
-router.get('/daco', function(req, res, next){
-    res.send('daco tu je')
+router.get('/add-event-form', function(req,res,next){
+    res.render('add-event-form.pug')
+})
+
+router.post('/add-event', function(req,res,next){
+    console.log(req.body)
+    res.send('ok')
 })
 
 module.exports = router

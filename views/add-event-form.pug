@@ -1,0 +1,27 @@
+extends ./layout.pug
+block content
+
+    form(action='/add-event')
+        .row
+            .col.s1.offset-s4
+                label Názov
+            .col.s3
+                input(type="text" name="name" placeholder="Zadaj názov" required)
+        .row
+            .col.s1.offset-s4
+                label Popis
+            .col.s3
+                input(type="text" name="description" placeholder="Krátky popis" required)
+        .row
+            .col.s1.offset-s4
+                label Hodiny
+            .col.s1
+                input(type="number" name="hours" min="0" max="23" value=0)
+            .col.s1
+                label Minúty
+            .col.s1
+                input(type="number" name="mins" min="0" max="59" value=0)
+
+        .row
+            .col.s1.offset-s7
+                input.waves-effect.waves-light.btn.red(type="submit" value="Odoslať")

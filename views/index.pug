@@ -1,32 +1,18 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Presenter
-  script(src="javascripts/progress.js")
-
-  //materialize
-  script(src="/materialize-css/dist/js/materialize.min.js")
-  link(rel="stylesheet" href="/materialize-css/dist/css/materialize.min.css")
-
-body
-  nav
-    .nav-wrapper.cyan
-      a.brand-logo Logo
-      ul.right
-        li
-          a link
-        li
-          a link
+extends ./layout.pug
+block content
 
   .row
 
     //director section
-    .col.s4
+    .col.s4.grey.lighten-2
       h5 Udalosti
       ul.collection
-        li.collection-item udalost1
-        li.collection-item udalost2
+        li.collection-item prednaska
+          spam.total-time HH:MM
+          a.right.waves-effect.waves-light(href="#")
+            i.material-icons.right send
+      a.btn-floating.waves-effect.waves-light.right.red(href="/add-event-form")
+        i.material-icons add
 
     //speaker section
     .col.s8
