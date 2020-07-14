@@ -23,4 +23,4 @@ app.listen(port, function(){
     console.log('App listening on port 3000')
 })
 
-opn('http://localhost:3000')
+//opn('http://localhost:3000')

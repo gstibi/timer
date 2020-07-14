@@ -5,7 +5,7 @@ const CurrentEventModel = require('./models/currentEvent')
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: 'presenter.db',
+    storage: 'C:/Users/KE00505/Documents/another_projects/timer/presenter.db',
     logging: false
 })
 
