@@ -8,11 +8,14 @@ module.exports = (sequelize, type)=>{
         description:{
             type: Sequelize.STRING
         },
-        hours:{
-            type: Sequelize.INTEGER
+        start:{
+            type: Sequelize.DATE
         },
-        minutes:{
-            type: Sequelize.INTEGER
+        end:{
+            type: Sequelize.DATE
+        },
+        status:{
+            type: Sequelize.STRING
         }
     },{
         freezeTableName: true

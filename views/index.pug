@@ -6,13 +6,30 @@ block content
     //director section
     .col.s4.grey.lighten-2
       h5 Udalosti
-      ul.collection
-        li.collection-item prednaska
-          spam.total-time HH:MM
-          a.right.waves-effect.waves-light(href="#")
-            i.material-icons.right send
+      ul.collapsible
+        li
+          .collapsible-header.collection
+            strong prednaska
+            span.start-time HH:MM
+            span.end-time HH:MM
+          .collapsible-body
+            span daco o prednaskedffffffffff sdfds fsd fs dfsd fsd fdfsdfsd f df ds fd fsdf ds fsd fdfsd sds dsd f dsffd sdfs  d sfd  sd ds
+            button.btn.waves-effect.waves-light.right.red
+              i.material-icons edit
+
+        each val in data
+          li 
+            .collapsible-header.collection
+              strong #{val.name}
+              span.start-time #{val.start}
+              span.end-time #{val.end}
+            .collapsible-body
+              span #{val.description}
+              button.btn.waves-effect.waves-light.right.red(id="id-"+val.id)
+                i.material-icons edit
       a.btn-floating.waves-effect.waves-light.right.red(href="/add-event-form")
         i.material-icons add
+
 
     //speaker section
     .col.s8

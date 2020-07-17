@@ -1,4 +1,7 @@
-.total-time{
-  position: absolute;
-  left: 50%;
+.start-time{
+  margin: auto
+}
+
+.end-time{
+  float: right;
 }

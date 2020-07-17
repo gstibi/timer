@@ -5,14 +5,14 @@ head
   title Presenter
 
   //materialize
-  script(src="/materialize-css/dist/js/materialize.min.js")
+  
   link(rel="stylesheet" href="/materialize-css/dist/css/materialize.min.css")
   link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 
   //jquery
   script(src="/jquery/dist/jquery.min.js")
 
-  script(src="javascripts/progress.js")
+
   link(rel="stylesheet" href="stylesheets/progress.css")
 
 body
@@ -27,3 +27,7 @@ body
             a link
 
     block content
+
+    block footer
+      script(src="javascripts/progress.js")
+      script(src="/materialize-css/dist/js/materialize.min.js")
