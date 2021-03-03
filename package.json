@@ -18,7 +18,7 @@
     "materialize": "^1.0.0",
     "materialize-css": "^1.0.0",
     "opn": "^6.0.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "sequelize": "^6.3.3",
     "sqlite3": "^5.0.0"
   },
